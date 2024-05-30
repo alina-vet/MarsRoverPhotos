@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro.ttf">
+            <string>SFPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="246" id="KGk-i7-Jjw" customClass="FilterVIewCell" customModule="MarsRoverPhotos" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="570" height="246"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="570" height="246"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z3d-9n-1tW">
+                        <rect key="frame" x="20" y="0.0" width="530" height="234"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filters" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000298023224" translatesAutoresizingMaskIntoConstraints="NO" id="HT0-qG-tTe">
+                                <rect key="frame" x="450" y="9.9999999999999982" width="64" height="26.333333333333329"/>
+                                <fontDescription key="fontDescription" name="SFPro-Bold" family="SF Pro" pointSize="22"/>
+                                <color key="textColor" red="0.97896379229999997" green="0.41285571459999998" blue="0.172226131" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ulC-wr-unU">
+                                <rect key="frame" x="16" y="22.666666666666668" width="424" height="1"/>
+                                <color key="backgroundColor" red="0.97896379229999997" green="0.41285571459999998" blue="0.172226131" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Jie-PN-L6h"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVA-yI-HUD">
+                                <rect key="frame" x="16" y="46.333333333333329" width="502" height="171.66666666666669"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rover:  Curiosity" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000298023224" translatesAutoresizingMaskIntoConstraints="NO" id="NLF-74-Grj">
+                                        <rect key="frame" x="0.0" y="49.333333333333336" width="134" height="20.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="SFPro-Bold" family="SF Pro" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera:  Front Hazard Avoidance Camera" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000298023224" translatesAutoresizingMaskIntoConstraints="NO" id="O5A-vV-bYC">
+                                        <rect key="frame" x="0.0" y="75.666666666666657" width="502" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="SFPro-Bold" family="SF Pro" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:  June 6, 2019" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000298023224" translatesAutoresizingMaskIntoConstraints="NO" id="6Da-9W-lFR">
+                                        <rect key="frame" x="0.0" y="102" width="156.66666666666666" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="SFPro-Bold" family="SF Pro" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="NLF-74-Grj" firstAttribute="leading" secondItem="pVA-yI-HUD" secondAttribute="leading" id="BjN-Su-uY2"/>
+                                    <constraint firstItem="6Da-9W-lFR" firstAttribute="top" secondItem="O5A-vV-bYC" secondAttribute="bottom" constant="6" id="NgP-nF-J3s"/>
+                                    <constraint firstAttribute="trailing" secondItem="O5A-vV-bYC" secondAttribute="trailing" id="Tw1-Dx-bp9"/>
+                                    <constraint firstItem="6Da-9W-lFR" firstAttribute="leading" secondItem="pVA-yI-HUD" secondAttribute="leading" id="hEG-FD-DET"/>
+                                    <constraint firstItem="O5A-vV-bYC" firstAttribute="leading" secondItem="pVA-yI-HUD" secondAttribute="leading" id="ihN-vL-PTF"/>
+                                    <constraint firstItem="NLF-74-Grj" firstAttribute="bottom" secondItem="O5A-vV-bYC" secondAttribute="top" constant="-6" id="jNx-HB-rq3"/>
+                                    <constraint firstItem="O5A-vV-bYC" firstAttribute="centerY" secondItem="pVA-yI-HUD" secondAttribute="centerY" id="mcS-fw-ndW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HT0-qG-tTe" firstAttribute="top" secondItem="z3d-9n-1tW" secondAttribute="top" constant="10" id="941-Aa-HwK"/>
+                            <constraint firstAttribute="trailing" secondItem="pVA-yI-HUD" secondAttribute="trailing" constant="12" id="A6U-kf-sNe"/>
+                            <constraint firstItem="pVA-yI-HUD" firstAttribute="top" secondItem="HT0-qG-tTe" secondAttribute="bottom" constant="10" id="aP4-wv-4gL"/>
+                            <constraint firstItem="pVA-yI-HUD" firstAttribute="leading" secondItem="z3d-9n-1tW" secondAttribute="leading" constant="16" id="ap5-xF-UpM"/>
+                            <constraint firstItem="ulC-wr-unU" firstAttribute="centerY" secondItem="HT0-qG-tTe" secondAttribute="centerY" id="aqA-Si-QDX"/>
+                            <constraint firstAttribute="bottom" secondItem="pVA-yI-HUD" secondAttribute="bottom" constant="16" id="erZ-y5-wZZ"/>
+                            <constraint firstAttribute="trailing" secondItem="HT0-qG-tTe" secondAttribute="trailing" constant="16" id="jZS-Wn-jZv"/>
+                            <constraint firstItem="HT0-qG-tTe" firstAttribute="leading" secondItem="ulC-wr-unU" secondAttribute="trailing" constant="10" id="lFM-KT-Srs"/>
+                            <constraint firstItem="ulC-wr-unU" firstAttribute="leading" secondItem="z3d-9n-1tW" secondAttribute="leading" constant="16" id="lui-Ig-vCU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="z3d-9n-1tW" secondAttribute="trailing" constant="20" id="5Xg-JQ-iDH"/>
+                    <constraint firstItem="z3d-9n-1tW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="C2k-Jh-Hpl"/>
+                    <constraint firstItem="z3d-9n-1tW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bCM-aL-VdS"/>
+                    <constraint firstAttribute="bottom" secondItem="z3d-9n-1tW" secondAttribute="bottom" constant="12" id="gPb-cr-IrM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="backView" destination="z3d-9n-1tW" id="QR9-c3-PjP"/>
+                <outlet property="cameraLabel" destination="O5A-vV-bYC" id="HQm-NK-GvR"/>
+                <outlet property="dateLabel" destination="6Da-9W-lFR" id="nAh-Of-uIb"/>
+                <outlet property="roverLabel" destination="NLF-74-Grj" id="N5h-RD-30I"/>
+            </connections>
+            <point key="canvasLocation" x="311.4503816793893" y="59.859154929577471"/>
+        </tableViewCell>
+    </objects>
+</document>

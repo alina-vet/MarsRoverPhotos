@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" id="Y6W-OH-hqX" customClass="SplashViewController" customModule="MarsRoverPhotos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFB-W0-4Vf">
+                                <rect key="frame" x="135" y="364.66666666666669" width="123" height="123"/>
+                                <color key="backgroundColor" red="0.97896379229999997" green="0.41285571459999998" blue="0.172226131" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eFB-W0-4Vf" secondAttribute="height" multiplier="1:1" id="Cgd-fN-vRD"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4BT-89-po7">
+                                <rect key="frame" x="141" y="664" width="111" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="111" id="DqL-6q-gmV"/>
+                                    <constraint firstAttribute="width" secondItem="4BT-89-po7" secondAttribute="height" multiplier="111:34" id="ctZ-YS-hgd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="4BT-89-po7" secondAttribute="bottom" constant="120" id="8Hc-Ht-YrO"/>
+                            <constraint firstItem="eFB-W0-4Vf" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="OlM-t1-utx"/>
+                            <constraint firstItem="eFB-W0-4Vf" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="b9c-5G-JeF"/>
+                            <constraint firstItem="eFB-W0-4Vf" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="123:393" id="xmG-l5-jkw"/>
+                            <constraint firstItem="4BT-89-po7" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="ywF-Ty-oe8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logoView" destination="eFB-W0-4Vf" id="xAT-NW-95D"/>
+                        <outlet property="lottieAnimationView" destination="4BT-89-po7" id="bLY-jm-bHJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31" y="-27"/>
+        </scene>
+    </scenes>
+</document>

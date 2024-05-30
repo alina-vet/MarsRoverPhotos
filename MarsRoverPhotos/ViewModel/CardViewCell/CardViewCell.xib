@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro.ttf">
+            <string>SFPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="223" id="KGk-i7-Jjw" customClass="CardViewCell" customModule="MarsRoverPhotos" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="628" height="223"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="628" height="223"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O1c-8T-2aP">
+                        <rect key="frame" x="20" y="3" width="588" height="217"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cRZ-VV-DSY">
+                                <rect key="frame" x="381" y="10" width="197" height="197"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cRZ-VV-DSY" secondAttribute="height" multiplier="1:1" id="vnI-EZ-UgJ"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="i4C-hy-IvE">
+                                <rect key="frame" x="16" y="72" width="355" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rover:  Curiosity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000298023224" translatesAutoresizingMaskIntoConstraints="NO" id="tci-DE-FMB">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" name="SFPro-Bold" family="SF Pro" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera:  Front Hazard Avoidance Camera" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000298023224" translatesAutoresizingMaskIntoConstraints="NO" id="SHg-xK-oDi">
+                                        <rect key="frame" x="0.0" y="26.333333333333329" width="355" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="SFPro-Bold" family="SF Pro" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:  June 6, 2019" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000298023224" translatesAutoresizingMaskIntoConstraints="NO" id="9ZM-LE-aep">
+                                        <rect key="frame" x="0.0" y="52.666666666666671" width="355" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="SFPro-Bold" family="SF Pro" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cRZ-VV-DSY" secondAttribute="trailing" constant="10" id="0J1-1Z-vWz"/>
+                            <constraint firstItem="cRZ-VV-DSY" firstAttribute="leading" secondItem="i4C-hy-IvE" secondAttribute="trailing" constant="10" id="Ctv-vF-vwX"/>
+                            <constraint firstItem="i4C-hy-IvE" firstAttribute="leading" secondItem="O1c-8T-2aP" secondAttribute="leading" constant="16" id="NJP-Qr-EJR"/>
+                            <constraint firstItem="i4C-hy-IvE" firstAttribute="centerY" secondItem="O1c-8T-2aP" secondAttribute="centerY" id="bM9-Lj-oiM"/>
+                            <constraint firstAttribute="bottom" secondItem="cRZ-VV-DSY" secondAttribute="bottom" constant="10" id="kHL-9m-8U4"/>
+                            <constraint firstItem="cRZ-VV-DSY" firstAttribute="top" secondItem="O1c-8T-2aP" secondAttribute="top" constant="10" id="lqN-CI-rPD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="O1c-8T-2aP" secondAttribute="bottom" constant="3" id="Qck-2K-y8Z"/>
+                    <constraint firstItem="O1c-8T-2aP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="Sq9-Wk-Roe"/>
+                    <constraint firstItem="O1c-8T-2aP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="VST-Fd-lss"/>
+                    <constraint firstAttribute="trailing" secondItem="O1c-8T-2aP" secondAttribute="trailing" constant="20" id="vWV-st-DaI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cameraLabel" destination="SHg-xK-oDi" id="osX-LP-nsl"/>
+                <outlet property="cellBackView" destination="O1c-8T-2aP" id="DRk-IP-UPa"/>
+                <outlet property="cellImageView" destination="cRZ-VV-DSY" id="daC-tv-Adz"/>
+                <outlet property="dateLabel" destination="9ZM-LE-aep" id="VsY-9U-KAO"/>
+                <outlet property="roverLabel" destination="tci-DE-FMB" id="xOm-PP-MzF"/>
+            </connections>
+            <point key="canvasLocation" x="-53" y="64"/>
+        </tableViewCell>
+    </objects>
+</document>
